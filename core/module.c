@@ -140,8 +140,8 @@ static void load_modinf (PzModule *mod)
 {
     char *buf = malloc (512);
 #ifdef IPOD
-    char *confdir = "/etc/podzilla";
-    char *moddir = "/etc/podzilla/modules";
+    char *confdir = "/sandbox";
+    char *moddir = "/sandbox/modules";
 #else
     char *confdir = malloc( MAXPATHLEN + 10 );
     char *moddir = malloc( MAXPATHLEN + 20 );
@@ -625,7 +625,7 @@ static void updateprogress( TWindow * sliderwin, TWidget * slider,
 void pz_modules_init(char *path) 
 {
 #ifdef IPOD
-#define MODULEDIR "/usr/lib"
+#define MODULEDIR "/opt/Tools/Encyclopodia/Modules"
 #else
 #define MODULEDIR "modules"
 #endif
